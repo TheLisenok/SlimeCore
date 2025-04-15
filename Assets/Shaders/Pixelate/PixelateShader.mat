@@ -48,5 +48,5 @@ Material:
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _ScreenParams: {r: 1, g: 1, b: 1, a: 1}
-    - _ScreenPixelOffset: {r: 0.58722305, g: 0.352211, b: 0, a: 0}
+    - _ScreenPixelOffset: {r: -0.8798828, g: -0.6577606, b: 0, a: 0}
   m_BuildTextureStacks: []
