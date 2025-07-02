@@ -4840,9 +4840,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5964515687050461661}
   - component: {fileID: 8083346406811624433}
-  - component: {fileID: 2734214050441961979}
   - component: {fileID: 6831680598139343117}
   - component: {fileID: 5572250943399893661}
+  - component: {fileID: 471797857008471836}
   m_Layer: 3
   m_Name: Box
   m_TagString: Destructible
@@ -4918,21 +4918,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2734214050441961979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8376554313626481031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024d728e5ddc0d54fa27d888b8aa5c10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFireResist: 0
-  burnTime: 3
-  burnParticle: {fileID: 7202443171439467294}
 --- !u!61 &6831680598139343117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5005,3 +4990,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &471797857008471836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8376554313626481031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9aebca6c8b635648b314df2851ad760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentType: 0
+  destroyDelay: 0
+  burnDuration: 3
+  fireParticles: {fileID: 7202443171439467294}

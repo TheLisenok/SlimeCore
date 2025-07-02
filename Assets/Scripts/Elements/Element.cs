@@ -34,6 +34,12 @@ public abstract class Element
     public abstract void ApplyEffect(Slime slime);
 
     /// <summary>
+    /// Reactions of elements of all objects EXPECT the Slime
+    /// </summary>
+    /// <param name="holder">The universal state class of the element</param>
+    public abstract void ApplyEffect(ElementHolder holder);
+
+    /// <summary>
     /// Defines how this element reacts with another element.
     /// Returns a new element resulting from the reaction.
     /// </summary>

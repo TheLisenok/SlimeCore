@@ -28,7 +28,7 @@ public class Caboom : MonoBehaviour
             try
             {
                 // Attempt to get the Destructible component
-                Destructible destructible = collision.gameObject.GetComponent<Destructible>();
+                BreakableObject destructible = collision.gameObject.GetComponent<BreakableObject>();
                 if (destructible != null)
                 {
                     destructible.Break();

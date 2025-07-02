@@ -14,6 +14,12 @@ public class EmptyElement : Element
     {
         Debug.Log("Slime is empty (this shouldn't be possible...)");
     }
+
+    public override void ApplyEffect(ElementHolder elementHolder)
+    {
+        Debug.Log("The object has no element.");
+    }
+
     public override Element ReactWith(Element otherElement)
     {
         Debug.Log($"Empty reacts with {otherElement.Name}, now the slime is this.");
@@ -60,6 +66,11 @@ public class FireElement : Element
         Debug.Log("Slime is now fiery.");
     }
 
+    public override void ApplyEffect(ElementHolder elementHolder)
+    {
+        Debug.Log("The object has a fire element.");
+    }
+
     public override Element ReactWith(Element otherElement)
     {
         if (_reactions.TryGetValue(otherElement.Type, out var reaction))
@@ -104,6 +115,11 @@ public class WaterElement : Element
         Debug.Log("Slime is now water-based.");
     }
 
+    public override void ApplyEffect(ElementHolder elementHolder)
+    {
+        Debug.Log("The object has a water element.");
+    }
+
     public override Element ReactWith(Element otherElement)
     {
         if (_reactions.TryGetValue(otherElement.Type, out var reaction))
@@ -145,6 +161,11 @@ public class AirElement : Element
     public override void ApplyEffect(Slime slime)
     {
         Debug.Log("Слайм воздушный");
+    }
+
+    public override void ApplyEffect(ElementHolder elementHolder)
+    {
+        Debug.Log("The object has a air element.");
     }
 
     public override Element ReactWith(Element otherElement)
@@ -191,6 +212,11 @@ public class IceElement : Element
         Debug.Log("Слайм ледяной");
     }
 
+    public override void ApplyEffect(ElementHolder elementHolder)
+    {
+        Debug.Log("The object has a ice element.");
+    }
+
     public override Element ReactWith(Element otherElement)
     {
         if (_reactions.TryGetValue(otherElement.Type, out var reaction))
@@ -234,6 +260,11 @@ public class ElectricityElement : Element
     public override void ApplyEffect(Slime slime)
     {
         Debug.Log("Слайм электрический");
+    }
+
+    public override void ApplyEffect(ElementHolder elementHolder)
+    {
+        Debug.Log("The object has a electro element.");
     }
 
     public override Element ReactWith(Element otherElement)

@@ -6,26 +6,26 @@ public class ChangeElementForsed : MonoBehaviour
 {
     public void SetFire()
     {
-        Slime.Instance.SetElementForced(ElementType.Fire);
+        Slime.Instance.SetSlimeElementForced(ElementType.Fire);
     }
     public void SetWater()
     {
-        Slime.Instance.SetElementForced(ElementType.Water);
+        Slime.Instance.SetSlimeElementForced(ElementType.Water);
     }
     public void SetAir()
     {
-        Slime.Instance.SetElementForced(ElementType.Air);
+        Slime.Instance.SetSlimeElementForced(ElementType.Air);
     }
     public void SetIce()
     {
-        Slime.Instance.SetElementForced(ElementType.Ice);
+        Slime.Instance.SetSlimeElementForced(ElementType.Ice);
     }
     public void SetElectro()
     {
-        Slime.Instance.SetElementForced(ElementType.Electricity);
+        Slime.Instance.SetSlimeElementForced(ElementType.Electricity);
     }
     public void SetEmpty()
     {
-        Slime.Instance.SetElementForced(ElementType.None);
+        Slime.Instance.SetSlimeElementForced(ElementType.None);
     }
 }

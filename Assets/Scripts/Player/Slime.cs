@@ -9,7 +9,7 @@ using UnityEngine.U2D;
 /// This class with Slime parameters snd methods
 /// </summary>
 
-public class Slime : MonoBehaviour
+public class Slime : ElementHolder
 {
     #region Singletone
     public static Slime Instance { get; private set; }
@@ -35,7 +35,7 @@ public class Slime : MonoBehaviour
     [SerializeField] private Light2D slimeLight;
     [SerializeField] private SlimeSoundClips soundClips;
 
-    public Element currentElement;
+    //public Element currentElement;
 
     private AudioSource _damage;
 
@@ -58,6 +58,11 @@ public class Slime : MonoBehaviour
         HealthUI.Instance.AddHP(health);
 
         _damage = soundClips.Damage;
+    }
+
+    public void SetSlimeElementForced(ElementType elementType)
+    {
+        ChangeElement(ElementManager.Instance.CreateElementFromType(elementType));
     }
 
     // Метод для изменения стихии
@@ -83,13 +88,6 @@ public class Slime : MonoBehaviour
             Debug.LogWarning("Переданный Element пустой!");
         }
     }
-
-    
-    public void SetElementForced(ElementType elementType)
-    {
-        ChangeElement(ElementManager.Instance.CreateElementFromType(elementType));
-    }
-
 
     // Фабричный метод для создания элементов из данных
     private Element CreateElementFromData(ElementData elementData)

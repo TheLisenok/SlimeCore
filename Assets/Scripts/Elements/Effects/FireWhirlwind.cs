@@ -27,10 +27,10 @@ public class FireWhirlwind : MonoBehaviour
         {
             try
             {
-                Destructible destructible = collision.gameObject.GetComponent<Destructible>();
+                BurnableObject destructible = collision.gameObject.GetComponent<BurnableObject>();
                 if (destructible != null)
                 {
-                    destructible.Burn();
+                    destructible.Ignite();
                 }
                 else
                 {

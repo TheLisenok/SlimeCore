@@ -16,12 +16,11 @@ public class OnElementInteractable : Interactable
     {
         base.OnInteract(interactor);
 
-        // TODO: Если будет можно, то исправь эту ересь
-        if (interactor.CompareTag("Slime"))
+        if (interactor.TryGetComponent<ElementHolder>(out ElementHolder elementHolder))
         {
-            Debug.Log("Это игрок интерактирует с элементом");
+            Debug.Log("Происходит интеракция элементов");
 
-            if (Slime.Instance.getCurrentElement() == elementToInteract)
+            if (elementHolder.CurrentElement.Type == elementToInteract)
             {
                 OnElementInteract();
             }

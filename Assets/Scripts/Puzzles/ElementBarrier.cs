@@ -21,7 +21,9 @@ public class ElementBarrier : OnElementInteractable
             base.OnElementInteract();
 
             BarrierOff();
-            Slime.Instance.SetElementForced(ElementType.None); // "Забираем" стихию у слайма
+
+            // TODO переделай эту хрень, пусть она не у слайма элемент меняет, а у объекта
+            Slime.Instance.SetSlimeElementForced(ElementType.None); // "Забираем" стихию у слайма
 
             isOpen = true;
         }

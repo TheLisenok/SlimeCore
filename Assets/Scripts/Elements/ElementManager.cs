@@ -34,7 +34,7 @@ public class ElementManager : MonoBehaviour
     /// <param name="elementType">The type of element to assign.</param>
     public void SetElementToSlime(ElementType elementType)
     {
-        if (Slime.Instance.currentElement != null)
+        if (Slime.Instance.CurrentElement != null)
         {
             Element newElement = CreateElementFromType(elementType);
             Slime.Instance.ChangeElement(newElement); // Передаём сам Element
