@@ -19,11 +19,21 @@ public class OnElementInteractable : Interactable
     {
         base.OnInteract(interactor);
 
+        // TODO: тоже выглядит как костыль
+        // Для объектов 
         if (interactor.TryGetComponent<ElementHolder>(out ElementHolder elementHolder))
         {
             Debug.Log("Происходит интеракция элементов");
 
             if (elementHolder.CurrentElement.Type == elementToInteract)
+            {
+                OnElementInteract();
+            }
+        }
+        // Для Слайма
+        else if (interactor.TryGetComponent<SlimeDot>(out SlimeDot slimeDot))
+        {
+            if (slimeDot.RootHolder.CurrentElement.Type == elementToInteract)
             {
                 OnElementInteract();
             }

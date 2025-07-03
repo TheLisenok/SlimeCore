@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7558302003626573684}
   - component: {fileID: 7081175593519660724}
   - component: {fileID: 582640091949566266}
-  - component: {fileID: 7610905934821543686}
   - component: {fileID: 3486213303535307880}
+  - component: {fileID: 3154139359169027606}
   m_Layer: 0
   m_Name: Breakable
   m_TagString: Destructible
@@ -132,21 +132,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7610905934821543686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7011411531201206785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024d728e5ddc0d54fa27d888b8aa5c10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFireResist: 1
-  burnTime: 3
-  burnParticle: {fileID: 0}
 --- !u!50 &3486213303535307880
 Rigidbody2D:
   serializedVersion: 4
@@ -174,3 +159,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3154139359169027606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7011411531201206785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d95d4ab4bd1e9478dbc75c63900137, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentType: 0
+  destroyDelay: 0
