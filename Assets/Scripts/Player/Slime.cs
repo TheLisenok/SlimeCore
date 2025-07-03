@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.U2D;
@@ -15,7 +16,7 @@ public class Slime : ElementHolder
     public static Slime Instance { get; private set; }
 
     private void Awake()
-    {
+    {   
         if (Instance == null)
             Instance = this;
         else
@@ -34,13 +35,15 @@ public class Slime : ElementHolder
     [SerializeField] private SpriteShapeRenderer spriteShapeRenderer;
     [SerializeField] private Light2D slimeLight;
     [SerializeField] private SlimeSoundClips soundClips;
+    [SerializeField] private List<GameObject> slimeDots; // Внешние точки с ссылками на классы, необходимые для интеракции
 
-    //public Element currentElement;
 
     private AudioSource _damage;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
+        
         if (defaultElement != null)
         {
             currentElement = CreateElementFromData(defaultElement);
@@ -58,6 +61,32 @@ public class Slime : ElementHolder
         HealthUI.Instance.AddHP(health);
 
         _damage = soundClips.Damage;
+
+
+        // Заполняем внешние точки
+        foreach (var dot in slimeDots)
+        {
+            var dotComponent = dot.GetComponent<SlimeDot>();
+
+            if (dotComponent != null)
+            {
+                dotComponent.RootHolder = this;
+            }
+        }
+    }
+
+    public override void ApplyEffect(Element element)
+    {
+        //base.ApplyEffect(element);
+
+        ElementManager.Instance.SetElementToSlime(element.Type); // TODO: перенеси сет елемент в Слайм, а то фигня
+    }
+
+    public override Element ReactWith(Element incomingElement)
+    {
+        var result = base.ReactWith(incomingElement);
+        ApplyEffect(result);
+        return result;
     }
 
     public void SetSlimeElementForced(ElementType elementType)

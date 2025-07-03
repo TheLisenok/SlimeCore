@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Allows interaction with an object to transfer an element to the slime.
+/// ОТДАЁТ элемент объекту
 /// </summary>
 public class InteractElement : Interactable
 {
@@ -13,11 +13,24 @@ public class InteractElement : Interactable
     /// <summary>
     /// Handles interaction logic, passing the element to the slime.
     /// </summary>
-    public override void OnInteract() // Логика интеракции в родителе
+    public override void OnInteract(GameObject interactor) // Логика интеракции в родителе
     {
         base.OnInteract();
 
-        ElementManager.Instance.SetElementToSlime(ElementToInteract);
+        // TODO: честно, всё равно выглядит как костыль, НО так как у нас не один игрок, а целых 8, то хз
+
+        // Проверка на игровой объект
+        if (interactor.TryGetComponent<ElementHolder>(out ElementHolder elementHolder))
+        {
+            elementHolder.ReactWith(ElementManager.Instance.CreateElementFromType(ElementToInteract));
+        }
+        // Проверка на Слайма
+        else if (interactor.TryGetComponent<SlimeDot>(out SlimeDot slimeDot))
+        {
+            slimeDot.RootHolder.ReactWith(ElementManager.Instance.CreateElementFromType(ElementToInteract));
+        }
+
+        //ElementManager.Instance.SetElementToSlime(ElementToInteract);
     }
 
     // TODO: добавь защиту того, чтобы не происходили бесконечные реакции

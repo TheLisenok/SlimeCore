@@ -55,6 +55,7 @@ public class ElementManager : MonoBehaviour
             case ElementType.Air: return new AirElement(airElement);
             case ElementType.Ice: return new IceElement(IceElement);
             case ElementType.Electricity: return new ElectricityElement(ElectricityElement);
+            case ElementType.None: return new EmptyElement(emptyElement);
             default: return new EmptyElement(emptyElement);
         }
     }

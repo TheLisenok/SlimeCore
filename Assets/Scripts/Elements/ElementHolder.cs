@@ -12,7 +12,7 @@ public class ElementHolder : MonoBehaviour
 
     public Element CurrentElement => currentElement; // Get current element
 
-    protected virtual void Awake()
+    protected virtual void Start()
     {
         currentElement = ElementManager.Instance.CreateElementFromType(currentType);
     }
@@ -24,10 +24,12 @@ public class ElementHolder : MonoBehaviour
         currentElement.ApplyEffect(this);
     }
 
-    public void ReactWith(Element incomingElement)
+    public virtual Element ReactWith(Element incomingElement)
     {
         Element result = currentElement.ReactWith(incomingElement);
         SetElementForced(result);
+
+        return result;
     }
 
     // 

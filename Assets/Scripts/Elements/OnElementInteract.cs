@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
+/// <summary>
+/// ÏÎËÓ×ÀÅÒ ÝËÅÌÅÍÒ ט ןנמגונÿוע סממעגועסעגטו
+/// </summary>
 public class OnElementInteractable : Interactable
 {
     [SerializeField] protected ElementType elementToInteract;

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5491398898724538775}
   - component: {fileID: 2816935539830790134}
+  - component: {fileID: 5879996306450303691}
   - component: {fileID: 4101572982636789342}
   - component: {fileID: 1438606182793258780}
   - component: {fileID: 7217991768397689552}
@@ -90,6 +91,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5879996306450303691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31563135489671057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &4101572982636789342
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -565,6 +579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634243600394914773}
   - component: {fileID: 4246829196325177344}
+  - component: {fileID: 4633868625859890366}
   - component: {fileID: 2764653162348996186}
   - component: {fileID: 33452222616987864}
   - component: {fileID: 5812792811927553594}
@@ -645,6 +660,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4633868625859890366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4736001208177353304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &2764653162348996186
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -826,6 +854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2843901765274334654}
   - component: {fileID: 6099679403324484078}
+  - component: {fileID: 2322910049945108129}
   - component: {fileID: 1516836233929920542}
   - component: {fileID: 5675891913933726448}
   - component: {fileID: 6008624918876574613}
@@ -906,6 +935,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2322910049945108129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128910700212197674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &1516836233929920542
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1182,6 +1224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8062176051180494581}
   - component: {fileID: 3121787208469939311}
+  - component: {fileID: 2414897648051269941}
   - component: {fileID: 7097414131162243008}
   - component: {fileID: 5956924671240228779}
   - component: {fileID: 9027866442082619780}
@@ -1262,6 +1305,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2414897648051269941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623660550357673196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &7097414131162243008
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1550,8 +1606,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0004005432, y: 0.000049591064, z: 0}
-    m_Extent: {x: 39.7505, y: 39.75055, z: 0}
+    m_Center: {x: -0.00009918213, y: -0.00069999695, z: 0}
+    m_Extent: {x: 39.7508, y: 39.750298, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1626,6 +1682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d58b4ea49a602c4c88624026b4528f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentType: 0
   health: 3
   maxHealth: 3
   moveSpeed: 5
@@ -1634,6 +1691,15 @@ MonoBehaviour:
   spriteShapeRenderer: {fileID: 4406274679789348042}
   slimeLight: {fileID: 4055007382762326018}
   soundClips: {fileID: 5348163642557658757}
+  slimeDots:
+  - {fileID: 8155738570823292261}
+  - {fileID: 5623660550357673196}
+  - {fileID: 5128910700212197674}
+  - {fileID: 8160455992596990213}
+  - {fileID: 6948147243282816572}
+  - {fileID: 7561870688471372937}
+  - {fileID: 31563135489671057}
+  - {fileID: 4736001208177353304}
 --- !u!114 &5491913306952269977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,6 +1771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8284144416767471529}
   - component: {fileID: 3109657523195287788}
+  - component: {fileID: 3356346248062084063}
   - component: {fileID: 6961122930169234289}
   - component: {fileID: 8424345667891152329}
   - component: {fileID: 67231688799128186}
@@ -1785,6 +1852,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3356346248062084063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948147243282816572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &6961122930169234289
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -2498,6 +2578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7926738439867514791}
   - component: {fileID: 7414813613881939963}
+  - component: {fileID: 548935927684881589}
   - component: {fileID: 3366772246966894194}
   - component: {fileID: 2270545828098675554}
   - component: {fileID: 9053309063283165192}
@@ -2578,6 +2659,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &548935927684881589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7561870688471372937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &3366772246966894194
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -2726,6 +2820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8445904587940437016}
   - component: {fileID: 8837773708136710800}
+  - component: {fileID: 7692556240784376173}
   - component: {fileID: 3792743475132869192}
   - component: {fileID: 5600026092489380651}
   - component: {fileID: 4034428723596684497}
@@ -2806,6 +2901,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7692556240784376173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8155738570823292261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &3792743475132869192
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -2954,6 +3062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2550130870402830370}
   - component: {fileID: 8806017038692729909}
+  - component: {fileID: 527122379570915594}
   - component: {fileID: 1845013387738743223}
   - component: {fileID: 5650276289823003981}
   - component: {fileID: 3318116500917576367}
@@ -3034,6 +3143,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &527122379570915594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8160455992596990213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaaee540ef66944185ff642e43e1e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RootHolder: {fileID: 3704371230621725731}
 --- !u!231 &1845013387738743223
 SpringJoint2D:
   m_ObjectHideFlags: 0
