@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// ОТДАЁТ элемент объекту
 /// </summary>
-public class InteractElement : Interactable
+public class ElementApplier : Interactable
 {
     [Header("Element of this object")]
     [SerializeField] private ElementType ElementToInteract; // The element assigned to this object

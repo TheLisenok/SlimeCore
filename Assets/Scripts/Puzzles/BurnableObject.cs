@@ -14,6 +14,7 @@ public class BurnableObject : BreakableObject
         if (isBurning) return;
 
         isBurning = true;
+        currentElement = ElementManager.Instance.CreateElementFromType(ElementType.Fire);
         fireParticles?.Play();
         Invoke(nameof(BurnOut), burnDuration);
     }

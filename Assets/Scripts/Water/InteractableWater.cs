@@ -16,7 +16,7 @@ using System;
 using UnityEngine.Rendering;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(EdgeCollider2D))]
-[RequireComponent(typeof(WaterTriggerHandler), typeof(SortingGroup), typeof(InteractElement))]
+[RequireComponent(typeof(WaterTriggerHandler), typeof(SortingGroup), typeof(ElementApplier))]
 [RequireComponent(typeof(Buoyancy2D))]
 public class InteractableWater : MonoBehaviour
 {
