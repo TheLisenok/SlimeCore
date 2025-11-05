@@ -17,7 +17,6 @@ public class CameraManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // Чтобы объект не уничтожался при смене сцен
 
 
         defaultZoom = _virtualCam.m_Lens.OrthographicSize;
